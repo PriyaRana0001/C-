@@ -1,0 +1,28 @@
+
+
+#include <iostream>
+using namespace std;
+
+union student{
+    public:
+    int age;
+    bool schlorship;
+    
+    
+    void display(){
+        cout<<"Age: "<<age<<endl;
+        cout<<"Rollno: "<<rollno<<endl;
+    }
+    
+};
+int main()
+{
+    student s;
+    s.age=2;
+    s.rollno=5;
+    
+
+    s.display();
+    
+    return 0;
+};
