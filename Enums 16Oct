@@ -1,0 +1,21 @@
+
+
+#include <iostream>
+using namespace std;
+
+enum games{
+    basketball=10,football=11,volleyball=12
+    
+    // void display(){
+    //     cout<<"Game: "<<games;
+    // }
+};
+int main(){
+    games g=volleyball;
+    
+    if(g==volleyball){
+        cout<<"Color Is Found! "<<endl;
+    }
+    
+    cout<<"Is At: "<< g <<endl;
+}
