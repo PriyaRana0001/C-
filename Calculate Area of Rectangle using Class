@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class rectangle{
+    public:
+    int length,breadth;
+   
+    void area(){
+        int a=length*breadth;
+        cout<<"Area: "<<a<<endl;
+    }
+    
+    
+    void display(){
+        cout<<"Length: "<<length<<endl;
+        cout<<"Breadth: "<<breadth<<endl;
+    }
+    
+};
+int main(){
+    rectangle r;
+    r.length=5;
+    r.breadth=4;
+    
+    r.display();
+    r.area();
+}
