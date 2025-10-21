@@ -1,0 +1,26 @@
+
+#include <iostream>
+using namespace std;
+
+class Animal{
+    public:
+    string name;
+    int age;
+    bool canRun;
+    
+    void display(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+        cout<<"CanRun: "<<(canRun?"yess":"no")<<endl;
+    }
+};
+int main(){
+    Animal a;
+    a.name="Tiger";
+    a.age=12;
+    a.canRun=true;
+    
+    a.display();
+}
+
+ 
