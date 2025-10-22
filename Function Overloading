@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+
+int mult(int a,int b){
+    return a*b;
+}
+int mult(int a,int b,int c){
+    return a*b*c;
+}
+
+int main()
+{
+    int value=mult(2,4);
+    int value2=mult(2,5,3);
+    
+    
+    cout<<value2;
+    //cout<<value;
+    
+    return 0;
+}
