@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+class animal{
+    public:
+    int static count;
+    
+    animal(){
+        count++;
+    }
+};
+int animal::count;
+
+int main(){
+    animal a,a1,a2,a3;
+    
+    cout<<"Total count of animals are: "<<animal::count;
+}
