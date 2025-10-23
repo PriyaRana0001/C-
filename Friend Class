@@ -1,0 +1,23 @@
+
+#include<iostream>
+using namespace std;
+
+class student{
+    friend class animal;
+     int a=3;
+};
+
+class animal{
+    public:
+    int b=6;
+    
+    void display(student s){
+        cout<<s.a<<endl;
+        
+    }
+};
+int main(){
+    student s;
+    animal a;
+    a.display(s);
+}
