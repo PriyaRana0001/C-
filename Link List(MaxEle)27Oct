@@ -1,0 +1,43 @@
+#include<iostream>
+#include<climits>
+using namespace std;
+struct node{
+    int data;
+    node* next;
+
+    node(int value){
+        data=value;
+        next=NULL;
+        
+    }
+};
+int findMaxElement(node* head){
+    node* p=head;
+    int maxi=INT_MIN;
+    
+    while(p!=NULL){
+        if(maxi<p->data){
+            maxi=p->data;
+        }
+        p=p->next;
+    }
+    return maxi;
+}
+void Print(node* head){
+    node* p=head;
+    
+    while(p!=NULL){
+        cout<<p->data<<" ";
+        p=p->next;
+    }
+}
+int main(){
+    node* head=new node(5);
+    head->next=new node(8);
+    head->next->next=new node(1);
+    head->next->next->next=new node(6);
+    head->next->next->next->next=new node(4);
+    
+    int maxEle=findMaxElement(head);
+    cout<<"Max Ele Is: "<<maxEle;
+}
