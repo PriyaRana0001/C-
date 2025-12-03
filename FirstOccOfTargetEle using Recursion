@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int firstOcc(int arr[], int idx, int target, int n){
+    if(idx>=n){
+        return -1;
+    }
+    if(target == arr[idx]){
+        return idx;
+    }
+    return firstOcc(arr,idx+1,target,n);
+}
+int main()
+{
+    int n=5;
+    int arr[n] = {1,2,3,2,3};
+    int target = 3;
+    cout<<firstOcc(arr,0,target,n);
+    return 0;
+}
