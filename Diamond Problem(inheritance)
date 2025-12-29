@@ -1,0 +1,28 @@
+// DIAMOND PROBLEM
+
+#include <iostream>
+using namespace std;
+class superClass{
+    public:
+    void show(){
+        cout<<"Super class !!!! "<<endl;
+    }
+};
+
+class parentClassA:virtual public superClass{
+    
+};
+class parentClassB:virtual public superClass{
+    
+};
+//we inherit virtually from parent class 
+class child:public parentClassA, public parentClassB{
+    
+};
+int main()
+{
+    child ch;
+    ch.show();
+    
+    return 0;
+}
